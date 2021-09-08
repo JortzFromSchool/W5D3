@@ -341,7 +341,7 @@ class QuestionLike
             questions
         JOIN
             users
-            ON users.id = questions.user_id 
+            ON users.id = question_likes.user_id 
         JOIN
             question_likes
             ON  question_likes.question_id = questions.id
